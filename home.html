@@ -1,0 +1,808 @@
+<div class="menu-btn">
+    <i class="fas fa-bars fa-2x"></i>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+<style>
+  
+    * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.copy{
+  color: #666;
+      line-height: 1.7em;
+      font-weight: 500;
+      -webkit-font-smoothing: antialiased;
+      font-family: 'Roboto',Helvetica,Arial,Lucida,sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border: 0;
+      outline: 0;
+      font-size: 100%;
+      -webkit-text-size-adjust: 100%;
+      
+      background: transparent;
+      background-repeat: no-repeat;
+      background-position: top;
+      background-size: cover;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      display: block;
+      background-image: url("https://i.ibb.co/Swch9Jc/20-7.jpg");
+      height: 1011px;
+      transform: translate(0px, 242.7px);
+}
+
+/* relative  absolute*/
+.slideshow {
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+    height: 500px;
+    width: 100%;
+}
+.slideshow img {
+    position:absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    margin: auto;
+    height: 400px;
+    width: 90%;
+}
+.center2 {
+  display: block;
+  
+  margin: auto;
+  
+  width: 50%;
+  bottom: 20px;
+}
+
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #fff;
+  color: #000;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+a {
+  color: #262626;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Nav */
+.main-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 20px 0;
+  font-size: 13px;
+}
+
+.main-nav .logo {
+  width: 110px;
+  height: 130;
+  width: 130;
+}
+
+.main-nav ul {
+  display: flex;
+}
+
+.main-nav ul li {
+  padding: 0 10px;
+}
+
+.main-nav ul li a {
+  padding-bottom: 2px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #262626;
+}
+
+.main-nav ul.main-menu {
+  flex: 1;
+  margin-left: 20px;
+}
+
+.menu-btn {
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  z-index: 2;
+  display: none;
+}
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  border: 0;
+  font-weight: bold;
+  padding: 10px 20px;
+  background: #262626;
+  color: #fff;
+  font-size: 15px;;
+}
+
+.btn:hover {
+  opacity: 0.9;
+}
+
+.dark {
+  color: #fff;
+}
+
+.dark .btn {
+  background: #f4f4f4;
+  color: #333;
+}
+/* https://i.ibb.co/PzGyfhP/two.png  贊助 https://i.ibb.co/YpY0j18/liver1.png https://i.ibb.co/Swch9Jc/20-7.jpg  https://i.ibb.co/YDg75BH/image.png*/
+/* Showcase  https://i.ibb.co/Qk28kkN/image.png https://i.ibb.co/YpY0j18/liver1.png https://i.ibb.co/qMmHQFP/oil4.png cover */
+.showcase {
+  width: 100%;
+  height: 700px;
+  background: url('https://i.ibb.co/Swch9Jc/20-7.jpg') no-repeat center center/100%;  
+  display: flex;
+
+  opacity: 0.8;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-end;
+  padding-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+.showcase h2, .showcase p {
+  margin-bottom: 250px;
+}
+
+.showcase .btn {
+  margin-top: 20px;
+}
+
+/* Home cards */
+.home-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+  margin-bottom: 40px;
+}
+
+.home-cards img {
+  width: 70%;
+  margin-bottom: 20px;
+}
+
+.home-cards h3 {
+  margin-bottom: 5px;
+}
+
+.home-cards a {
+  display: inline-block;
+  padding-top: 10px;
+  color: #0067b8;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.home-cards a:hover i {
+  margin-left: 10px;
+}
+
+/* Xbox  https://i.ibb.co/5vmRS4Z/box1.png https://i.ibb.co/KjhBMDT/box1.png */
+.xbox {
+  width: 80%;
+  height: 370px;
+  align-items: center;
+  background: url('https://i.ibb.co/KjhBMDT/box1.png') no-repeat center center/80%;
+  margin-bottom: 30px;
+}
+
+.xbox .content {
+  width: 100%;
+  padding: 50px 0 0 30px;
+}
+
+.xbox p, .carbon p {
+  margin: 10px 0 20px;
+}
+
+/* Carbon */
+.carbon {
+  width: 80%;
+  height: 500px;
+  align-items: center;
+  background: url('https://i.ibb.co/4TTL7HR/futrue.png') no-repeat  center/80%;
+}
+
+.carbon .content {
+  width: 55%;
+  padding: 100px 0 0 30px;
+}
+
+/* Follow */
+.follow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 30px 0 30px;
+}
+
+.follow * {
+  margin-right: 10px;
+}
+
+/* Links */
+.links {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 35px 0;
+}
+
+.links-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.links li {
+  line-height: 2.8;
+}
+
+/* Footer */
+.footer {
+  background: #f2f2f2;
+  color: #616161;
+  font-size: 12px;
+  padding: 20px 0;
+}
+
+.footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer div {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.footer div i {
+  margin-right: 10px;
+}
+
+.footer ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  margin-right: 30px;
+  margin-bottom: 20px;
+}
+
+@media(max-width: 700px) {
+  .menu-btn {
+    display: block;
+  }
+
+  .menu-btn:hover {
+    opacity: 0.5;
+  }
+
+  .main-nav ul.right-menu {
+    margin-right: 50px;
+  }
+
+  .main-nav ul.main-menu {
+    display: block;
+    position: absolute;
+    top:0;
+    left: 0;
+    background: #f2f2f2;
+    width: 50%;
+    height: 100%;
+    border-right: #ccc 1px solid;
+    opacity: 0.9;
+    padding: 30px;
+    transform: translateX(-500px);
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .main-nav ul.main-menu li {
+    padding: 10px;
+    border-bottom: #ccc solid 1px;
+    font-size: 14px;
+  }
+
+  .main-nav ul.main-menu li:last-child {
+    border-bottom: 0;
+  }
+
+  .main-nav ul.main-menu.show {
+    transform: translateX(-20px);
+  }
+
+  .home-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .xbox .content p {
+    display: none;
+  }
+
+  .xbox .content h2 {
+    margin-bottom: 20px;
+  }
+
+  .carbon .content {
+    width: 80%;
+  }
+
+  .links .links-inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media(max-width: 500px) {
+  .home-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner {
+    grid-template-columns: 1fr;
+  }
+
+  .links .links-inner ul {
+    margin-bottom: 20px;
+  }
+  
+}
+</style>
+  <div class="container">
+    <!-- Nav https://i.ibb.co/wwLhz98/logo.png https://i.ibb.co/FHycqrs/ALOVAS.png -->
+    <nav class="main-nav">
+      <img src="https://i.ibb.co/FHycqrs/ALOVAS.png" alt="ALOVAS" class="logo">
+
+      <ul class="main-menu">
+        <li><a href="#"style="font-size: 30px;" >主頁</a></li>
+        <li><a href="{{ url_for('page1') }}" style="font-size: 30px;" >計畫介紹</a></li>
+        <li><a href="{{ url_for('page2') }}"style="font-size: 30px;" >資料運用說明</a></li>
+        <li><a href="{{ url_for('out') }}"style="font-size: 30px;" >退出機制</a></li>
+
+      </ul>
+      
+      <ul class="right-menu">
+        <li>
+          <a href="#">
+            <i class="fas fa-search"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <i class="fas fa-shopping-cart"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Showcase <h2>Surface Deals</h2> -->
+    <!-- <header class="showcase">  </header> -->
+    
+    <br>
+
+      
+    <header class="showcase">  
+      <h3 style="  font-family:fantasy; font-size: 36px; padding-top: 100px; color: rgb(0, 0, 0);">
+        具有整合協力合作之開放式人工智慧病理分析平台
+      </h3>
+      <p>
+        
+        <a href="{{ url_for('page1') }}" class="btn" style="font-size:40 ;font-family:fantasy;">
+          計畫說明 <i class="fas fa-chevron-right"></i>
+        </a>
+      </p>
+      
+    </header>
+      <div style="padding-bottom: 40px; text-align: center;">
+        
+      </div>
+      
+      
+    
+
+    <!-- Home cards 1 -->
+    <section class="home-cards">
+      <div>
+        <img height="150" width="70" src="https://i.ibb.co/v3tyQwy/lg.png" alt="">
+        <h3>PI:  Dr. Pau-Choo Chung
+        </h3>
+        <p>
+          
+        </p>
+        <a href="http://smile.ee.ncku.edu.tw/Professor.htm">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img height="150" width="70"  src="https://i.ibb.co/8gRnvzP/Chun-Shien.png" alt="" />
+        <h3>Co-PI: Dr. Chun-Shien Lu
+        </h3>
+        <p>
+          
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img height="150" width="70" src="https://i.ibb.co/qrVqDSC/Wei-Ta.png" alt="" />
+        <h3>Co-PI: Dr. Wei-Ta Chu
+        </h3>
+        <p>
+          
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+      <div>
+        <img height="150" width="70" src="https://i.ibb.co/ns8W6x2/Chu-Song.png" alt="" />
+        <h3>Co-PI: Dr. Chu-Song Chen
+        </h3>
+        <p>
+          
+        </p>
+        <a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+      </div>
+    </section>
+
+    <!-- Xbox   和國研院國家動物中心合作
+            發展數位病理於新藥開發之動物實驗應用分析平台 -->
+    <!-- <section class="xbox">
+      <div class="content">
+        <h2>發展數位病理於新藥開發之動物實驗應用分析平台
+        </h2>
+        <p>
+             </p>
+          <a href="#" class="btn">
+            Join Now <i class="fas fa-chevron-right"></i>
+          </a>
+      </div>
+    </section> -->
+
+    <!-- Home cards 2 -->
+			<section class="home-cards">
+				<div>
+					<img height="150" width="70" src="https://i.ibb.co/M7B5ffv/Chun-Rong.png" alt="" />
+					<h3>Co-PI: Dr. Chun-Rong Huang
+                    </h3>
+					<p>
+					
+					</p>
+					<a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+				</div>
+				<div>
+					<img height="150" width="70" src="https://i.ibb.co/dGQ7fN4/Chao-Jyun.png" alt="" />
+					<h3>Co-PI: Dr. Chao-Jyun Jhuang
+                    </h3>
+					<p>
+					
+					</p>
+					<a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+				</div>
+				<div>
+					<img height="150" width="70" src="https://i.ibb.co/vH9hXNX/Fu-Chang.png" alt="" />
+					<h3>Co-PI: Dr. Fu-Chang Tsai
+                    </h3>
+					<p>
+						
+					</p>
+					<a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+				</div>
+				<div>
+					<img height="150" width="70" src="https://i.ibb.co/FDRYYF0/Meng-Ru.png" alt="" />
+					<h3>Co-PI: Dr. Meng-Ru Shen
+                    </h3>
+					<p>
+					</p>
+					<a href="#">Learn More <i class="fas fa-chevron-right"></i></a>
+				</div>
+      </section>
+      <!-- <div class="slideshow"> 
+        
+
+        
+        <img  src='https://i.ibb.co/DGZsrWx/2.png' alt=""/>
+        <img  src='https://i.ibb.co/q0vH7RW/3.png' alt=""/>
+        <img  src='https://i.ibb.co/BrHmHBT/4.png' alt=""/>
+        
+        <img style="opacity: 0.9;" src='https://i.ibb.co/Vt5H6bH/2.png'  alt=""/>
+        <img  src='https://i.ibb.co/hWH69jS/16-1.jpg' alt=""/>
+        <img  style="opacity: 0.9;" src='https://i.ibb.co/rmZLzVY/live3.png' alt=""/>
+        <img style="opacity: 0.9;" src='https://i.ibb.co/qMmHQFP/oil4.png' alt=""/>
+        <img style="opacity: 0.9;" src='https://i.ibb.co/qMmHQFP/oil4.png' alt=""/       
+        >
+https://i.ibb.co/fdnNwYq/oil-r1.png  https://i.ibb.co/hWH69jS/16-1.jpg https://i.ibb.co/m66dc5L/11261.png  https://i.ibb.co/d6T0Bsc/11262.png
+    </div> -->
+    <br>
+    <br>
+    <br>
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button  type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+        
+      </div>
+      
+
+      <div class="carousel-inner">
+
+
+
+        <div class="carousel-item "> 
+          <img style="height: 500px;" src="https://i.ibb.co/rxhSVbf/image.jpg " class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3  style="color:rgb(63, 0, 0); font-size: 30px;">人體脂肪肝病理切片</h3>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img   style="height: 500px;" src="https://i.ibb.co/hWH69jS/16-1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="color:rgb(0, 0, 0);font-size: 30px;">大腸癌腺體病理切片</h3>
+            
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img  style="height: 500px;" src="https://i.ibb.co/rmZLzVY/live3.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3 style="color:rgb(53, 1, 95);font-size: 30px;">肝纖維化病理切片</h3>
+            
+          </div>
+          
+            
+        </div>
+        <div class="carousel-item active">
+        <img  style="height: 500px;" src="https://i.ibb.co/YDg75BH/image.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 style="color:rgb(234, 233, 235);font-size: 30px;">肝臟腫瘤病理切片</h3>
+          
+        </div>          
+      </div>
+      <div class="carousel-item">
+        <img  style="height: 500px;" src="https://i.ibb.co/Vt5H6bH/2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h3 style="color:rgb(53, 1, 95);font-size: 30px;">小鼠脂肪肝病理切片</h3>
+          
+        </div>
+        
+          
+      </div>
+      
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button  class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div style="align-items: center;" ><img style="height: 450; width: 90%; " src='https://i.ibb.co/GshGWRg/1.png' alt=""/></div>
+     
+    <br>
+    <br>
+    <br>
+
+      <!-- Carbon 臉書連結 -->
+      <!--<section class="carbon dark"><div class="content"></div></section> -->
+      
+
+      <!-- Follow -->
+      <!--
+      <section class="follow">
+        <p>Follow Microsoft</p>
+        <a href="https://facebook.com">
+          <img src="https://i.ibb.co/LrVMXNR/social-fb.png" alt="Facebook">
+        </a>
+        <a href="https://twitter.com">
+          <img src="https://i.ibb.co/vJvbLwm/social-twitter.png" alt="Twitter">
+        </a>
+        <a href="https://linkedin.com">
+          <img src="https://i.ibb.co/b30HMhR/social-linkedin.png" alt="Linkedin">
+        </a>
+      </section> 
+    -->
+    </div>
+      <!-- Links -->
+      <section class="links">
+        <div class="links-inner">
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;"  >國立台灣大學</a></li>
+            <li><a href="#">蔡甫昌 教授[醫學院醫學教育暨生醫倫理學科暨研究所]</a></li>
+            <li><a href="#">黃從仁 副教授[心理學系暨研究所]</a></li>
+            <li><a href="#">陳祝嵩 教授[資訊工程學系暨研究所]</a></li>
+            
+            
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立清華大學</a></li>
+            <li><a href="#">林裕訓 助理教授[工業工程與工程管理學系(所)]</a></li>
+            <li><a href="#" style="font-size: 14px;">國立中興大學 </a></li>
+            <li><a href="#">黃春融 教授[資訊科學與工程學系(所)]</a></li>
+            
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立中央大學 </a></li>
+            <li><a href="#">王家慶 教授[資訊工程學系]</a></li>
+            <li><a href="#" style="font-size: 14px;">國立中山大學</a></li>
+            <li><a href="#">劉耿豪 助理教授[機械與機電工程學系(所)]</a></li>
+            <li><a href="#">楊惠芳 助理教授[資訊管理學系(所)]</a></li>
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立成功大學</a></li>
+            <li><a href="#">邱宏智 主治醫師[醫學院附設醫院]</a></li>
+            <li><a href="#">簡世杰 主治醫師[醫學院附設醫院]</a></li>
+            <li><a href="#">朱威達 教授[資訊工程學系(所)]</a></li>
+            <li><a href="#">孫永年 教授[資訊工程學系(所)]</a></li>
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立成功大學</a></li>
+            <li><a href="#">張瑞紘 副教授[資訊工程學系(所)]</a></li>
+            <li><a href="#">鄭國順 教授[生物醫學工程學系]</a></li>
+            <li><a href="#">沈孟儒 教授[藥理學科暨研究所]</a></li>
+            <li><a href="#">蔡弘文 副教授[醫學系病理學科]</a></li>
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立成功大學</a></li>
+            <li><a href="#">鄭斌男 主治醫師[醫學系內科學科]</a></li>
+            <li><a href="#">鄭修琦 教授[醫學系內科學科]</a></li>
+            <li><a href="#">邱彥程 主治醫師[醫學系內科學科]</a></li>
+            <li><a href="#">周宗慶 主治醫師[醫學系外科]</a></li>
+            <li><a href="#">蔡依珊 主治醫師[醫學系放射線學科]</a></li>
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立中正大學</a></li>
+            <li><a href="#">江振國 副教授[資訊工程學系]</a></li>
+            <li><a href="#" style="font-size: 14px;">國立臺北護理健康大學</a></li>
+            <li><a href="#">連中岳 助理教授[資訊管理系(所)]</a></li>
+            <li><a href="#">周宗慶 主治醫師[醫學系外科]</a></li>
+            
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">國立陽明交通大學 </a></li>
+            <li><a href="#" >林彥宇 教授[資訊工程學系]</a></li>
+            <li><a href="#" style="font-size: 14px;">慈濟學校財團法人慈濟大學</a></li>
+            <li><a href="#">蕭嘉宏 副教授[醫學資訊學系(含碩士班)]</a></li>
+            
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">臺中榮民總醫院 詹以吉 主治醫師[病理部]</a></li>
+            <li><a href="#">陳志榮 助理教授[病理部]</a></li>
+            <li><a href="#">李欣倪 主治醫師[病理部]</a></li>
+            <li><a href="#">陳律臻 主治醫師[檢驗部]</a></li>
+            <li><a href="#" style="font-size: 14px;">高雄榮民總醫院 楊宗龍 主治醫師</a></li>
+            <li><a href="#">李恒昇 主治醫師[病理部]</a></li>
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">義大醫療財團法人義大醫院</a></li>
+            <li><a href="#">蘇裕傑 主治醫師[血液腫瘤科]</a></li>
+            <li><a href="#" style="font-size: 14px;">中央研究院</a></li>
+            <li><a href="#">呂俊賢 研究員[資訊科學研究所]</a></li>
+            <li><a href="#">黃文良 研究員[資訊科學研究所]</a></li>
+           
+          </ul>
+          <ul>
+            <li><h3>共同主持人</h3></li>
+            <li><a href="#" style="font-size: 14px;">財團法人國家實驗研究院</a></li>
+            <li><a href="#">莊朝鈞 研究員[高速網路與計算中心]</a></li>
+            <li><a href="#">林錫慶 研究員[高速網路與計算中心]</a></li>
+            <li><a href="#">王聿泰 副研究員[高速網路與計算中心]</a></li>
+            <li><a href="#">林沿妊 助理研究員(博士級)[高速網路與計算中心]</a></li>
+            <li><a href="#">楊嘉麗 正工程師[高速網路與計算中心]</a></li>
+          </ul>
+        </div>
+      </section>
+      
+      <!-- Footer -->
+      <!--
+      <footer class="footer">
+        <div class="footer-inner">
+          <div><i class="fas fa-globe fa-2x"></i> English (United States)</div>
+          <ul>
+            <li><a href="#">Sitemap</a></li>
+					<li><a href="#">Contact Microsoft</a></li>
+					<li><a href="#">Privacy & cookies</a></li>
+					<li><a href="#">Terms of use</a></li>
+					<li><a href="#">Trademarks</a></li>
+					<li><a href="#">Safety & eco</a></li>
+					<li><a href="#">About our ads</a></li>
+					<li><a href="#">&copy; Microsoft 2020</a></li>
+          </ul>
+        </div>
+    -->
+    <footer class="footer">
+        <script>
+            document.querySelector('.menu-btn').addEventListener('click', () => document.querySelector('.main-menu').classList.toggle('show'));
+            
+            
+            
+        </script>
+        <script>
+          $('.slideshow').each(function(){
+    
+    let slideImgs = $(this).find('img'),
+        slideImgsCount = slideImgs.length,
+        currentIndex = 0;
+    
+    slideImgs.eq(currentIndex).fadeIn();
+    
+    setInterval(showNextSlide, 5000);
+    
+    function showNextSlide(){
+        let nextIndex = (currentIndex + 1) % slideImgsCount;
+        console.log(nextIndex)
+        slideImgs.eq(currentIndex).fadeOut();
+        slideImgs.eq(nextIndex).fadeIn();
+        currentIndex = nextIndex;
+    }
+})
+        </script>
+        
+    </footer>
+
+    

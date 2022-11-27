@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.min.js" integrity="sha384-lpyLfhYuitXl2zRZ5Bn2fqnhNAKOAaM/0Kr9laMspuaMiZfGmfwRNFh8HlMy49eQ" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js" rel="stylesheet" type='application/javascript' />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.2.0/js/bootstrap.min.js" rel="stylesheet" type='application/javascript' />
+    <meta charset="utf-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+   <title>Smile Lab</title>
+    <style>
+        @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+.fa-2x {
+font-size: 2em;
+}
+.fa {
+position: relative;
+display: table-cell;
+width: 60px;
+height: 36px;
+text-align: center;
+vertical-align: middle;
+font-size:20px;
+}
+
+
+.main-menu:hover,nav.main-menu.expanded {
+width:250px;
+overflow:visible;
+}
+
+.main-menu {
+background:#212121;
+border-right:1px solid #e5e5e5;
+position:absolute;
+top:0;
+bottom:0;
+height:100%;
+left:0;
+width:60px;
+overflow:hidden;
+-webkit-transition:width .05s linear;
+transition:width .05s linear;
+-webkit-transform:translateZ(0) scale(1,1);
+z-index:1000;
+}
+
+.main-menu>ul {
+margin:7px 0;
+}
+
+.main-menu li {
+position:relative;
+display:block;
+width:250px;
+}
+
+.main-menu li>a {
+position:relative;
+display:table;
+border-collapse:collapse;
+border-spacing:0;
+color:#999;
+ font-family: arial;
+font-size: 14px;
+text-decoration:none;
+-webkit-transform:translateZ(0) scale(1,1);
+-webkit-transition:all .1s linear;
+transition:all .1s linear;
+  
+}
+
+.main-menu .nav-icon {
+position:relative;
+display:table-cell;
+width:60px;
+height:36px;
+text-align:center;
+vertical-align:middle;
+font-size:18px;
+}
+
+.main-menu .nav-text {
+position:relative;
+display:table-cell;
+vertical-align:middle;
+width:190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+position:absolute;
+left:0;
+bottom:0;
+}
+
+.no-touch .scrollable.hover {
+overflow-y:hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+overflow-y:auto;
+overflow:visible;
+}
+
+a:hover,a:focus {
+text-decoration:none;
+}
+
+nav {
+-webkit-user-select:none;
+-moz-user-select:none;
+-ms-user-select:none;
+-o-user-select:none;
+user-select:none;
+}
+
+nav ul,nav li {
+outline:0;
+margin:0;
+padding:0;
+}
+.main-menu li:hover>a,nav.main-menu li.active>a,.dropdown-menu>li>a:hover,.dropdown-menu>li>a:focus,.dropdown-menu>.active>a,.dropdown-menu>.active>a:hover,.dropdown-menu>.active>a:focus,.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,.dashboard-page nav.dashboard-menu ul li.active a {
+color:#fff;
+background-color:#5fa2db;
+}
+.area {
+float: left;
+background: #e2e2e2;
+width: 100%;
+height: 100%;
+}
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}
+
+
+
+
+
+    #content{
+      width:1000px;
+      margin-left:auto;
+      margin-right:auto;
+      vertical-align:top;
+    }
+    #box{
+      width:1000px;
+      padding:10px;
+      background-color:white;
+      display:inline-block;
+      vertical-align:top;
+      height:1200px;
+      
+    }
+    #box_cc{
+      width:1000px;
+      margin-right:auto;
+      padding:10px;
+      background-color:white;
+      display:inline-block;
+      vertical-align:top;
+      height:550px;
+      
+    }
+    .title{
+      font-weight:bold;
+    }
+    .bule{
+      text-align:center;
+      font-size:25px;
+      background-color:#C9FFFF;
+    }
+    </style>
+</head>
+<body style="background-color:#eeeeee;">
+    <h1  style="text-align:center;font-size:50px;background-color:#003344;color:white">具有整合協力合作之開放式人工智慧病理分析平台</h1>
+    <h3 style="text-align:center;font-size:50px;padding-top:30px"> 計畫介紹 </h3>
+    <div id="content">
+        <div id="box_cc"style="font-size:25px;" >
+            <p style="text-align:left;font-family: 'Courier New', Courier, monospace;">● 現代的精準醫療中，醫師透過高倍率顯微鏡檢視病患患病部位的病理組織切片進行分析，可以在細胞層級有效地掌握病患的病況。然而<span style="color: red;">醫師以肉眼檢視如下圖的高倍率切片影像，十分耗費時間與精力</span>，一些比較零碎的病徵區域也較難以人為精確計算醫療指標。<span style="color: red;">本計畫目標是發展人工智慧醫療輔助分析 AI </span>，對病理切片影像進行分析，偵測病徵區域並計算相關醫療指標，提供醫師<span style="color: red;">做為診斷時的輔助參考資訊，以節省醫師檢閱切片影像所需的時間與精力，並提升病患醫療品質。</span>
+            </p>
+            <br>
+            <br>
+            <p style="text-align:center;font-size:35px;font-family: 'Courier New', Courier, monospace; ">AI 能夠提供醫生以下幫助</p>
+            <div style="text-align:left; font-size:30px;font-style: italic;">
+                
+            <li>1. 分辨疾病(癌症，可疑病變區域的偵測)</li>
+            <li>2. 抓取人體細胞組織，經過統計量化提供醫師診斷輔助</li>
+            <li>3.提供疾病病變的分級與參考建議，擷取出的量化資料</li>
+            
+        </div>
+        <br>
+            
+            
+        
+        
+
+    </div>
+    <div id="content">
+        <div id="box">
+            <img style="padding:10px;display:block; margin:auto;" width="100%" height="400" src="https://i.ibb.co/m66dc5L/11261.png" >
+            <figcaption style="text-align:center;font-size:20px;font-family: 'Courier New', Courier, monospace;"> 人體脂肪肝切片病理切片
+            </figcaption>
+            <br>
+            <img style="padding:10px;display:block; margin:auto;" width="100%" height="400" src="https://i.ibb.co/d6T0Bsc/11262.png" >
+            <figcaption style="text-align:center;font-size:20px;font-family: 'Courier New', Courier, monospace;"> AI 人體脂肪肝切片偵測結果圖
+            </figcaption>
+            <br>
+            <br>
+            <p style="text-align:left;font-size:25px;font-family: 'Courier New', Courier, monospace;">
+                ● 以上圖的脂肪肝切片影像為例，醫師藉由觀察病理切片內油滴的大小與數量等等，可以了解病患脂肪肝的發展，為病患安排相應的治療。然而從上圖可以看到，肝臟切片內的油滴又多又密，醫師在高倍率顯微鏡下很難精確計算油滴的大小與數量。<span style="color: red;">本計畫發展的人工智慧醫療輔助分析 AI ，可以精確偵測出肝臟切片內油滴的區域，協助醫師計算油滴大小與數量並預測脂肪肝的分級，提供醫師診斷時參考用的輔助資訊，讓醫師能更好地掌握病患的病況，以提供病患更好的醫療照護</span>。
+            </p>
+           
+    <br>
+    <br>
+    <br>
+        </div>
+    </div>
+    <div style="text-align:center;">
+        <form action="page2" method="get" >
+            <button class="btn btn-primary btn-lg " style="font-size:40px ;">資料運用說明</button>
+        </form>
+        <br>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+<nav>
+    <div class="area"></div><nav class="main-menu">
+        <ul>
+            <li>
+                <a href="{{ url_for('home') }}">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        首頁
+                    </span>
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('page1') }}">
+                    <i class="fa fa-home fa-2x"></i>
+                    <span class="nav-text">
+                        計畫介紹
+                    </span>
+                </a>
+              
+            </li>
+            <li class="has-subnav">
+                <a href="{{ url_for('page2') }}">
+                    <i class="fa fa-laptop fa-2x"></i>
+                    <span class="nav-text">
+                        資料運用說明
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="{{ url_for('out') }}">
+                   <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        病患當事人動態同意退出機制
+                    </span>
+                </a>
+                
+            </li>
+            <li class="has-subnav">
+                <a href="{{ url_for('page4') }}">
+                   <i class="fa fa-list fa-2x"></i>
+                    <span class="nav-text">
+                        團隊成員
+                    </span>
+                </a>
+                
+            </li>
+        </ul>
+
+        
+    </nav>
+
+</body>
+<script>
+    
+</script>
+
+</html> 
