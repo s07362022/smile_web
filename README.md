@@ -1,2 +1,2 @@
 # smile_web
-https://i.ibb.co/9WLtQxd/2.png
+網站位置 http://140.116.177.17:8087/
